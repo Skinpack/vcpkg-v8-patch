@@ -239,3 +239,21 @@ index 8855d6ffbc..ed2b0f62e9 100644
  #include <DbgEng.h>
  #include <DbgModel.h>
  #include <Windows.h>
+diff --git a/testing/gmock/BUILD.gn b/testing/gmock/BUILD.gn
+index de5ae539093..c20d33511a1 100644
+--- a/testing/gmock/BUILD.gn
++++ b/testing/gmock/BUILD.gn
+@@ -15,12 +15,7 @@ source_set("gmock") {
+     "include/gmock/gmock-matchers.h",
+     "include/gmock/gmock.h",
+   ]
+-  deps = [ "//third_party/googletest:gmock" ]
+-
+-  public_configs = [
+-    "//third_party/googletest:gmock_config",
+-    "//third_party/googletest:gtest_config",
+-  ]
++  public_deps = [ "//third_party/googletest:gmock" ]
+ }
+ 
+ # The file/directory layout of Google Test is not yet considered stable. Until

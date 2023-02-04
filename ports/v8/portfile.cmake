@@ -100,7 +100,7 @@ v8_fetch(
 v8_fetch(
         DESTINATION third_party/jinja2
         URL https://chromium.googlesource.com/chromium/src/third_party/jinja2.git
-        REF b41863e42637544c2941b574c7877d3e1f663e25
+        REF 4633bf431193690c3491244f5a0acbe9ac776233
         SOURCE ${SOURCE_PATH})
 v8_fetch(
         DESTINATION third_party/markupsafe
